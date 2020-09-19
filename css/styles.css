@@ -1,3 +1,39 @@
 input#usrInput { display: none; }
 input#usrChkbox { display: none; }
 .form-element-hidden { display: none; }
+
+#formMsg {
+    background-color: rgb(255, 232, 232);
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    display: none; 
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    max-width: 250px;
+}
+
+#bevSelection { display: none; }
+
+.success {
+    border-color: #2ecc71;
+}
+.error {
+    border-color: #ff0000;
+}
+
+
+button.primary-button {
+    display: inline-block;
+    background-color: #f2745f;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border: 0;
+}

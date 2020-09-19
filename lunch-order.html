@@ -83,7 +83,7 @@
                         <h3>Lunch Options</h3> 
                         <div class="row">
                             <div class="col-lg-6"><span>Meal: </span> 
-                                <select class="form-control" id="ddl">
+                                <select class="form-control" id="ddlMeal">
                                     <option>Make Your Lunch Selection</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -91,7 +91,7 @@
                                   </select>
                             </div>
                               <div class="col-lg-6"> <span>Quantity: </span> 
-                                <select class="form-control" id="sel1">
+                                <select class="form-control" id="ddlMealQty">
                                 <option>Make your selection</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -103,19 +103,19 @@
                         <h3>Beverage Options</h3> 
                         <span>Would you like a beverage?</span>
                         <div class="row">
-                            <div class="col-lg-4"><input type="radio" name="dessert" value="male">Yes</div>
-                            <div class="col-lg-4"><input type="radio" checked name="dessert" value="male">No</div>
+                            <div class="col-lg-4"><input type="radio" id="chkBevYes" name="" value="">Yes</div>
+                            <div class="col-lg-4"><input type="radio" id="chkBevNo" checked name="" value="">No</div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6"> <span>Beverage: </span> 
-                                <select class="form-control" id="sel1">
+                                <select class="form-control" id="ddlBeverage">
                                     <option>Make Your Beverage Selection</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                   </select></div>
                                   <div class="col-md-6"><span>Quantity: </span> 
-                                    <select class="form-control" id="sel1">
+                                    <select class="form-control" id="ddlBevQty">
                                         <option>Make your selection</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -128,9 +128,8 @@
                             <textarea class="form-control" rows = "6" placeholder = "Please indicate any specifics regarding your order you would like to share."></textarea>
                             <br>
                             <br>
-                            <div class="primary-button">
-                                <a id="btn-submit" href="">Place Order</a>
-                            </div>
+                            <button class="primary-button" id="btn-submit">Place Order</button>
+                        
             </div>
          </div>
                        
