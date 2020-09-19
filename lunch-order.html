@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/hero-slider.css">
     <link rel="stylesheet" href="css/owl-carousel.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-
+    <link rel="stylesheet" href="css/styles.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
@@ -60,26 +61,29 @@
                 <h3>Customer Details</h3> 
                
                 <div class="row">
-                    <div class="col-lg-3"><span>Firstname: </span> <input type="text" class="form-control" placeholder="First Name *" value="" /></div>
-                    <div class="col-lg-3"><span>Surname: </span> <input type="text" class="form-control" placeholder="Last Name *" value="" /></div>
-                    <div class="col-lg-3"><span>Contact: </span> <input type="text" class="form-control" placeholder="Last Name *" value="" /></div>
+                    <div class="col-lg-3"><span>Firstname: </span><input type="text" class="form-control" placeholder="First Name *" value="" id="firstname" /></div>
+                    <div class="col-lg-3"><span>Surname: </span><input type="text" class="form-control" placeholder="Surname *" value="" id="surname" /></div>
+                    <div class="col-lg-3"><span>Contact: </span><input type="text" class="form-control" placeholder="(xxx)xxx-xxxx *" value="" id="contact" /></div>
                     <div class="col-lg-3"> <span>Student Year: (Optional)</span> 
-                        <select class="form-control" id="sel1">
-                        <option>Choose your academic form</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        <select class="form-control" id="ddlStudent">
+                            <option>Choose your academic form</option>
+                            <option>1st Form</option>
+                            <option>2nd Form</option>
+                            <option>3rd Form</option>
+                            <option>4th Form</option>
+                            <option>5th Form</option>
                       </select></div>
                 </div>
             </div>
-         
+        <input type="text" id="usrInput" />
+        <input type="checkbox" id="usrChkbox" />   
             <div class="form-group">
                 <div class="maxl">
                      <label class="radio inline"> 
                         <h3>Lunch Options</h3> 
                         <div class="row">
                             <div class="col-lg-6"><span>Meal: </span> 
-                                <select class="form-control" id="sel1">
+                                <select class="form-control" id="ddl">
                                     <option>Make Your Lunch Selection</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -120,12 +124,12 @@
                                     </div>
                                 </div>
                             </label>
-                            <label for = "name">Order Comments</label>
-                            <textarea class = "form-control" rows = "6" placeholder = "Please indicate any specifics regarding your order you would like to share."></textarea>
+                            <label for="name">Order Comments</label>
+                            <textarea class="form-control" rows = "6" placeholder = "Please indicate any specifics regarding your order you would like to share."></textarea>
                             <br>
                             <br>
                             <div class="primary-button">
-                                <a href="">Place Order</a>
+                                <a id="btn-submit" href="">Place Order</a>
                             </div>
             </div>
          </div>
