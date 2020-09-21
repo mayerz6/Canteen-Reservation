@@ -87,10 +87,12 @@
                       </select></div>
                 </div>             
             </div>
-         <input type="text" id="usrInput" />
-         <input type="checkbox" id="usrChkbox" />
-            <div class="form-group">
-                <div class="maxl">
+         
+            <input type="text" id="usrInput" />
+          <input type="checkbox" id="usrChkbox" />
+           
+         <div class="form-group">
+             
                     <label class="radio inline"> 
                         <h3>Breakfast Options</h3> 
                         <div class="row">
@@ -139,17 +141,24 @@
                         </div>
                        
                     </label>
-                    <label for="name">Order Comments:</label>
-                    <textarea id="usrComments" class="form-control" rows = "6" placeholder = "Please indicate any specifics regarding your order you would like to share."></textarea>
+                    <label class="radio inline">
+                        <div class="row">
+                            <span>Order Comments:</span>
+                            <textarea id="usrComments" class="form-control" rows = "6" placeholder = "Please indicate any specifics regarding your order you would like to share."></textarea>
+                        </div>
+                    </label>
+
+                    <input type="checkbox" id="orderConf" /><span>Please confirm the accuracy/completion of this order.</span>
                 
                     <br>
                     <br>
                         
-                            <button class="primary-button" id="btn-submit">Place Order</button>
+                            <button class="primary-button" disabled id="btn-submit">Place Order</button>
                         
-                </div>
+             
             </div>
         
+
    
     </div>
    

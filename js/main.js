@@ -1,4 +1,5 @@
 const form = {
+
     firstname: document.getElementById("firstname"),
     surname: document.getElementById("surname"),
     contact: document.getElementById("contact"),
@@ -19,10 +20,21 @@ const form = {
     errStatusLN: false,
     errStatusCN: false,
     formMsg: document.getElementById("formMsg"),
+    orderConf: document.getElementById("orderConf"),
     submit: document.getElementById("btn-submit")
+
 };
 
 let errors = "";
+
+form.orderConf.addEventListener("change", (event) => {
+  if(event.target.checked){
+    form.submit.removeAttribute("disabled");
+  } else { 
+    form.submit.setAttribute("disabled", "disabled");
+  }
+
+});
 
 form.bevSelectYes.addEventListener("click", () => {
     form.bevForm.style = "display: inline-block";
@@ -32,13 +44,13 @@ form.bevSelectNo.addEventListener("click", () => {
   form.bevForm.style = "display: none";
 });
 
-form.submit.addEventListener("click", () => {
-
-  validateFN();
-  validateLN();
-  validateCN();
-  errorMsgTest();
- /* console.log(form); */
+form.submit.addEventListener("click", (event) => {
+    event.preventDefault();
+      validateFN();
+      validateLN();
+      validateCN();
+      errorMsgTest();
+    /* console.log(form); */
 
 });
 
