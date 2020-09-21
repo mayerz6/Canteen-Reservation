@@ -46,13 +46,18 @@ form.bevSelectNo.addEventListener("click", () => {
 
 form.submit.addEventListener("click", (event) => {
     event.preventDefault();
-      validateFN();
-      validateLN();
-      validateCN();
+     // validateFN();
+     // validateLN();
+     // validateCN();
       errorMsgTest();
     /* console.log(form); */
 
 });
+
+form.firstname.addEventListener("blur", validateFN, true);
+form.surname.addEventListener("blur", validateLN, true);
+form.contact.addEventListener("blur", validateCN, true);
+
 
 function errorMsgTest(){
 

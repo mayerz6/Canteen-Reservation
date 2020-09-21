@@ -22,7 +22,9 @@ input#usrChkbox { display: none; }
 .error {
     border-color: #ff0000;
 }
-
+h4 > a { color: #EF3125; }
+h2#slogan { font-weight: 200; color: #363e50; outline: 0px solid #ccc; }
+img#main-logo { margin: 20px 0px; width: 24%; }
 
 button.primary-button {
     display: inline-block;
