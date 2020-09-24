@@ -66,6 +66,7 @@
                         <li id="errMsgFN"></li>
                         <li id="errMsgLN"></li>
                         <li id="errMsgCN"></li>
+                        <li id="errMsgMS"></li>
                         <!--
                          <li>Missing Contact Info.</li>
                         --> 
@@ -77,18 +78,18 @@
                     <div class="col-lg-3"><span>Surname: </span><input type="text" class="form-control" placeholder="Surname *" value="" id="surname" /></div> 
                     <div class="col-lg-3"><span>Contact: </span><input type="text" class="form-control" placeholder="(xxx)xxx-xxxx *" value="" id="contact" /></div>
                     <div class="col-lg-3"> <span>Student Year: (Optional)</span> 
-                        <select class="form-control" id="ddlStudent">
+                      <select class="form-control" id="ddlStudent">
                         <option>Choose your academic form</option>
-                        <option>1st Form</option>
-                        <option>2nd Form</option>
-                        <option>3rd Form</option>
-                        <option>4th Form</option>
-                        <option>5th Form</option>
+                        <option value="1">1st Form</option>
+                        <option value="2">2nd Form</option>
+                        <option value="3">3rd Form</option>
+                        <option value="4">4th Form</option>
+                        <option value="5">5th Form</option>
                       </select></div>
                 </div>             
             </div>
          
-            <input type="text" id="usrInput" />
+            <input type="text" id="mealType" value="Break Order" />
           <input type="checkbox" id="usrChkbox" />
            
          <div class="form-group">
@@ -96,24 +97,28 @@
                     <label class="radio inline"> 
                         <h3>Break Options</h3> 
                         <div class="row">
+                            
                             <div class="col-lg-6"> <span>Meal: </span> 
-                                <select class="form-control" id="ddl">
-                                <option>Make Your Breakfast Selection</option>
-                                <option>Bacon &amp; Eggs</option>
-                                <option>Omelet &amp; Sausage</option>
-                                <option>Breakfast Burrito</option>
+                                <select class="form-control" id="ddlMeal">
+                                <option value="0">Make Your Breakfast Selection</option>
+                                <option value="1">Assorted Cookies - $1.50</option>
+                                <option value="2">Home Made Brownies - $3.00</option>
+                                <option value="3">Fruit Cups - $2.50</option>
+                                <option value="4">Fruit Snacks - $2.50</option>
                               </select></div>
                             <div class="col-lg-6"> <span>Quantity: </span> 
-                                <select class="form-control" id="sel1">
-                                <option>Select your portion size</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                              </select></div>
-                             
+                                <select class="form-control" id="ddlMealQty">
+                                <option value="0">Select your portion size</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select></div>  
                         </div>
-                       
+                        
+                        
+                        
+                        
                     </label>
                     <label class="radio inline"> 
                        
@@ -125,24 +130,32 @@
                         </div>
                         <div id="bevSelection" class="row">
                             <div class="col-lg-6"> <span>Beverage: </span> 
-                                <select class="form-control" id="sel1">
-                                <option>Make Your Beverage Selection</option>
-                                <option>Coke</option>
-                                <option>Sprite</option>
-                                <option>Lemonade</option>
-                                <option>Juice</option>
+                                <select class="form-control" id="ddlBeverage">
+                                <option value="0">Make Your Beverage Selection</option>
+                                <option value="1">Soft Drinks - $2</option>
+                                <option value="2">Soft Drinks - $3</option>
+                                <option value="3">PHD Juices - $2</option>
+                                <option value="4">Bottled Water - $2</option>
+                                <option value="5">Cranberry Water - $2</option>
                               </select></div>
                           <div class="col-md-6"><span>Quantity: </span> 
-                            <select class="form-control" id="sel1">
-                                <option>Make your selection</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
+                            <select class="form-control" id="ddlBevQty">
+                                <option value="0">Make your selection</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                               </select>
                             </div>
                         </div>
-                       
+                        
+                        
+
+
+
+
+
+
                     </label>
                     <label class="radio inline">
                         <div class="row">
@@ -183,7 +196,7 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 

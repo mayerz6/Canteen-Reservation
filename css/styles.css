@@ -1,4 +1,4 @@
-input#usrInput { display: none; }
+input#mealType { display: none; }
 input#usrChkbox { display: none; }
 .form-element-hidden { display: none; }
 

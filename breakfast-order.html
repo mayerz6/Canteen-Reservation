@@ -66,6 +66,7 @@
                         <li id="errMsgFN"></li>
                         <li id="errMsgLN"></li>
                         <li id="errMsgCN"></li>
+                        <li id="errMsgMS"></li>
                         <!--
                          <li>Missing Contact Info.</li>
                         --> 
@@ -88,7 +89,7 @@
                 </div>             
             </div>
          
-            <input type="text" id="usrInput" />
+            <input type="text" id="mealType" value="Breakfast Order" />
           <input type="checkbox" id="usrChkbox" />
            
          <div class="form-group">
@@ -97,19 +98,21 @@
                         <h3>Breakfast Options</h3> 
                         <div class="row">
                             <div class="col-lg-6"> <span>Meal: </span> 
-                                <select class="form-control" id="ddl">
-                                <option>Make Your Breakfast Selection</option>
-                                <option>Bacon &amp; Eggs</option>
-                                <option>Omelet &amp; Sausage</option>
-                                <option>Breakfast Burrito</option>
+                                <select class="form-control" id="ddlMeal">
+                                <option value="0">Make Your Breakfast Selection</option>
+                                <option value="1">Eggs Your Way - $3.00</option>
+                                <option value="2">Omelette - $4.00</option>
+                                <option value="3">Assorted Muffins - $2.50</option>
+                                <option value="4">Tuna Paste Sandwiches - $3.00</option>
+                                <option value="5">Cheese Paste Sandwiches - $3.00</option>
                               </select></div>
                             <div class="col-lg-6"> <span>Quantity: </span> 
                                 <select class="form-control" id="sel1">
-                                <option>Select your portion size</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
+                                <option value="0">Select your portion size</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                               </select></div>
                              
                         </div>
@@ -126,11 +129,12 @@
                         <div id="bevSelection" class="row">
                             <div class="col-lg-6"> <span>Beverage: </span> 
                                 <select class="form-control" id="sel1">
-                                <option>Make Your Beverage Selection</option>
-                                <option>Coke</option>
-                                <option>Sprite</option>
-                                <option>Lemonade</option>
-                                <option>Juice</option>
+                                    <option value="0">Make Your Beverage Selection</option>
+                                    <option value="1">Soft Drinks - $2</option>
+                                    <option value="2">Soft Drinks - $3</option>
+                                    <option value="3">PHD Juices - $2</option>
+                                    <option value="4">Bottled Water - $2</option>
+                                    <option value="5">Cranberry Water - $2</option>
                               </select></div>
                           <div class="col-md-6"><span>Quantity: </span> 
                             <select class="form-control" id="sel1">
